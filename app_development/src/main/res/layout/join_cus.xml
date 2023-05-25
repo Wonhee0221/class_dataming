@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape"
+    android:orientation="vertical" >
+
+    <!-- 성명 입력을 위한 폼 구성요소: 시작 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 성명 라벨 -->
+
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="@string/cus_id" />
+        <!-- 성명 입력을 위한 EditText -->
+
+        <EditText
+            android:id="@+id/cus_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!-- 성명 입력을 위한 폼 구성요소: 끝 -->
+
+
+    <!-- 성별 구분을 위한 폼 구성요소: 시작 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 성별 라벨 -->
+
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="@string/cus_pw" />
+
+        <EditText
+            android:id="@+id/cus_pw"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!-- 성별 구분을 위한 폼 구성요소: 끝 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 성별 라벨 -->
+
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="@string/cus_name" />
+
+        <EditText
+            android:id="@+id/cus_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!-- 수신여부 확인을 위한 폼 구성요소: 시작 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 수신여부 라벨 -->
+
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="@string/cus_addr" />
+
+        <EditText
+            android:id="@+id/cus_addr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+        <!-- SMS 확인 -->
+    </LinearLayout>
+    <!-- 수신여부 확인을 위한 폼 구성요소: 끝 -->
+
+
+    <!-- 관심분야 선택을 위한 스피너 구성요소: 시작 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+     
+
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="전화번호" />
+
+        <EditText
+            android:id="@+id/cus_tel"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:ems="10" />
+    </LinearLayout>
+  
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="이메일" />
+
+        <EditText
+            android:id="@+id/cus_email"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:ems="10" />
+    </LinearLayout>
+
+    <!-- 저장버튼을 위한 폼 구성요소: 끝 -->
+
+    <TextView
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:text="정보수신동의" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:text="동의" />
+
+    <Button
+        android:id="@+id/join_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록" />
+
+</LinearLayout>
